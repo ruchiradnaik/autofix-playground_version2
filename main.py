@@ -10,7 +10,9 @@ def run_app():
     data_stream = [10, 20, 50, 0, 100]
     
     try:
-        result = calculate_complex_average(data_stream)
+        # Filter out zeroes to prevent the division by zero error
+        filtered_data_stream = [num for num in data_stream if num != 0]
+        result = calculate_complex_average(filtered_data_stream)
         print(f"Calculation Result: {result}")
     except Exception as e:
         # We re-raise to ensure the bot sees the traceback
@@ -18,3 +20,4 @@ def run_app():
 
 if __name__ == "__main__":
     run_app()
+# CodeSentinal: created for you by RuchirAdnaik
