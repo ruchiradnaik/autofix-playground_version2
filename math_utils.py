@@ -7,4 +7,4 @@ def calculate_complex_average(numbers):
         inverse = 100 / num  
         total_inverse += inverse
         
-    return total_inverse / len(numbers)
+    return total_inverse /
