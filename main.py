@@ -1,4 +1,5 @@
-import sys
+# CodeSentinal: created for you by RuchirAdnaik.
+
 from math_utils import calculate_complex_average
 from config import APP_NAME
 
