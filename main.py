@@ -9,6 +9,11 @@ def run_app():
     # deep inside the dependency, NOT here in main.
     data_stream = [10, 20, 50, 0, 100]
     
+    # Check for zero in the data_stream to prevent runtime error
+    if 0 in data_stream:
+        print("Error: Data stream contains zero, which is not allowed.")
+        return
+    
     try:
         result = calculate_complex_average(data_stream)
         print(f"Calculation Result: {result}")
@@ -18,3 +23,4 @@ def run_app():
 
 if __name__ == "__main__":
     run_app()
+# CodeSentinal: created for you by RuchirAdnaik.
